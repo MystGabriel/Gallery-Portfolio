@@ -95,11 +95,31 @@ header h1{
 }
 
 .portfolio-item .item{
-    width: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    cursor: pointer;
+    background-color: #1c1c1c;
 }
 
-img{
+.portfolio-item .item i{
+    display: none;
+    position: absolute;
+    font-size: 60px;
+    color: #8b8b8b;
+    z-index: 1000;
+    transition: all .5s ease;
+}
+
+.portfolio-item .item img{
     width: 100%;
+    transition: all .5s ease;
+}
+
+.portfolio-item .item img:hover{
+    opacity: 0.2;
 }
 
 @media(max-width: 1024px){

@@ -32,3 +32,14 @@ $(document).ready(function(){
         }
     });
 });
+
+const img = document.querySelector("img");
+const closeBtn = document.querySelector(".bx-x");
+
+img.onclick = () => {
+    img.classList.add("fs");
+}
+
+closeBtn.onclick = () => {
+    img.classList.remove("fs");
+}
